@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #1E88E5;
+  animation: MudarCor 4s infinite alternate;
+}
+@keyframes MudarCor{
+  0% {
+      background-color:#1E88E5;
+  }
+  50% {
+      background-color: #115692;
+  }
+  100% {
+      background-color: blue;
+  }
+}
+
+section {
+  padding: 60px 0;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+.img_model{
+  width: 100%;
+  height: auto;
+}
+footer{
+  background-color:#1E88E5;
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.animated-section {
+  animation: fadeIn 2s;
+}
+
+.responsive-table {
+  overflow-x: auto;
+}
+
+
+
